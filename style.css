@@ -1,0 +1,260 @@
+
+/*AVALEHT.HTML*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background-color:  #C0C0C0;
+}
+
+.container {
+  width: 1140px;
+  margin: 40px auto 0 auto; 
+  position: relative
+}
+
+#logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  float: left;
+  font-weight: bold;
+  color: black;
+  background-color: transparent;
+  }
+
+.clearfix:after {
+  content: "";  /*tühi sisu*/
+  display: table;
+  clear: both;
+}
+
+/*siit algab search bar*/
+.searchbar[type=text] {
+    width: 90px;
+    height: 30px;
+    float:right;
+    margin-top: 0px;
+    background-color: white;
+}
+/*nav bar, menu bar*/
+#nav {
+    background-color: #CD853F;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex; 
+    justify-content: center;
+}
+
+#nav-li {
+    float: left;
+}
+
+a {
+    display: block;
+}
+
+.topnav {
+  overflow: hidden;
+  width: 1140px;
+  height: 120px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+  background-color: #CD853F ;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid  black;
+  background-color: white;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid  black ;
+  background-color: white;
+}
+
+/*PILT*/
+.img-section {
+    background-image: url("https://cdn.pixabay.com/photo/2015/09/05/20/07/log-924958_960_720.jpg");
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1140px;
+    background-attachment: fixed;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    margin-top: -35px;
+}
+
+#hero-text {
+  text-shadow: 3px 3px brown;
+}
+
+/*postitused*/ 
+
+.blog-posts {
+  line-height: 145%;
+  width: 70%;
+  position: relative;
+  background-color: white;
+  padding: 30px 50px;
+  margin-top: 50px;
+  float:left;
+}
+
+.main-text,  /*töötab*/
+.date {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 145%;
+  }
+
+.main-text::first-letter { 
+    font-size: 200%;
+}
+
+.caption { /*töötab*/
+  font-size: 24px;
+  color: brown;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+.date {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+/*parempoolne linkide riba*/
+
+.other-links {
+  float: right;
+  width: 25%;
+  background-color: brown;
+  color: lightpink;
+  margin-top: 50px;
+}
+
+#list-li {
+  color: white;
+  font-size: 18px;
+  list-style-type: none;
+  background-color: brown;
+  padding-left: 20px;
+}
+
+#link-background {
+  background-color: brown;
+}
+
+
+
+/*foooter*/ 
+
+
+footer {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: #CD853F;
+  padding-bottom: 2px;
+}
+
+.copyright {
+   width: 1140px;
+   color: black;
+   text-align: center;
+   font-size: 18px;
+   margin-top: 50px;
+   display: block;
+   padding-top: 10px;
+}
+
+.footer-text {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+} 
+
+/*RAAMATUD.HTML*/
+
+.grid-container {
+  width: 1140px;
+  display: grid;
+  background-color: transparent; 
+  grid-template-columns: 285px 285px 285px 285px;
+  grid-column-gap: 10px;
+  grid-row-gap: 25px;
+  margin-bottom: 60px;
+}
+
+.grid-item {
+  padding-left: 10px;
+  height: auto;
+  text-align: center;
+}
+
+.book-img {
+  width: 200px;
+  height: auto;
+}
+
+.book-text {
+  width: 210px; 
+  text-align: left;
+  font-size: 18px;
+  padding-left: 40px;
+}
+
+
+/*KONTAKTID.HTML*/
+.contacts {
+  margin-bottom: 150px;
+  height: 150px;
+  float: left;
+}
+
+
+.mapouter {
+  float: right;
+  margin-bottom: 50px;
+}
+  
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:500px;
+  width:600px;
+  float: right;
+  position: absolute;
+}
+
+/*SISSELOGIMINE.HTML*/
+.sisselogimine {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.parool {
+  padding-right: 73px;
+}
+
+.kasutajanimi {
+  padding-right: 30px;
+}
+
